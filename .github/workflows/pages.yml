@@ -13,6 +13,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main' && github.repository_id == '1469475632'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -34,6 +35,7 @@ jobs:
           test ! -d content
           test ! -d auth
           test ! -f package.json
+          test -z "$(find . -path './.git' -prune -o -type l -print -quit)"
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
