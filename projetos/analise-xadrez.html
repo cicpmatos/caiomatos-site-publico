@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Análise de Partidas de Xadrez | Caio Matos
+    </title>
+
+    <meta
+        name="description"
+        content="Projeto de análise de partidas de xadrez utilizando Power BI, Power Query, DAX e dados obtidos através das APIs do Chess.com e World Bank."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         HEADER
+         ======================================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a
+                href="../index.html"
+                class="logo"
+            >
+                Caio Matos
+            </a>
+
+
+            <nav
+                class="nav"
+                aria-label="Navegação principal"
+            >
+
+                <a href="../index.html#inicio">
+                    Início
+                </a>
+
+                <a href="../index.html#portfolio">
+                    Portfólio
+                </a>
+
+                <a href="../index.html#sobre">
+                    Sobre
+                </a>
+
+                <a href="../index.html#tecnologias">
+                    Tecnologias
+                </a>
+
+                <a href="../index.html#contato">
+                    Contato
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ========================================
+             HERO
+             ======================================== -->
+
+        <section class="project-hero">
+
+            <div class="container">
+
+                <a
+                    href="../index.html#portfolio"
+                    class="back-link"
+                >
+                    ← Voltar ao portfólio
+                </a>
+
+
+                <p class="eyebrow">
+                    POWER BI • API • XADREZ
+                </p>
+
+
+                <h1>
+                    Análise de Partidas
+                    <span>de Xadrez.</span>
+                </h1>
+
+
+                <p class="project-lead">
+
+                    Projeto pessoal que transforma meu histórico de partidas
+                    no Chess.com em uma análise interativa sobre desempenho,
+                    evolução de rating, aproveitamento e comportamento ao
+                    longo do tempo.
+
+                </p>
+
+
+                <div class="project-tags">
+
+                    <span>Power BI</span>
+
+                    <span>Power Query</span>
+
+                    <span>DAX</span>
+
+                    <span>API REST</span>
+
+                    <span>JSON</span>
+
+                    <span>Chess.com</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             DASHBOARD PRIMEIRO
+             ======================================== -->
+
+        <section class="project-dashboard-first">
+
+            <div class="container">
+
+                <div class="powerbi-container">
+
+                    <iframe
+                        title="Partidas Xadrez"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiMWZjZjA1ZTQtYTRkNy00MjM5LTlmODktMTQxYjdiOGFjNTliIiwidCI6ImM4MjE2ZTc3LTJkMjUtNGE3ZS05NjczLTBiZjZiM2JhYjA0ZSJ9"
+                        frameborder="0"
+                        allowfullscreen="true"
+                    >
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             O PROJETO
+             ======================================== -->
+
+        <section class="section section-dark">
+
+            <div class="container project-details-grid">
+
+
+                <div>
+
+                    <p class="section-label">
+                        O PROJETO
+                    </p>
+
+
+                    <h2>
+                        Dados aplicados a um dos meus hobbies.
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text">
+
+                    <p>
+
+                        O xadrez é um dos meus principais hobbies e o
+                        Chess.com é a plataforma que utilizo para jogar,
+                        treinar e acompanhar minha evolução.
+
+                    </p>
+
+
+                    <p>
+
+                        Neste projeto, utilizei a API pública do Chess.com
+                        para transformar meu histórico de milhares de
+                        partidas em uma solução analítica desenvolvida
+                        no Power BI.
+
+                    </p>
+
+
+                    <p>
+
+                        O objetivo foi construir uma visão estruturada
+                        sobre minha evolução como jogador, permitindo
+                        analisar resultados, rating, modalidades,
+                        adversários e diferentes períodos da minha
+                        trajetória na plataforma.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             DESAFIO
+             ======================================== -->
+
+        <section class="section">
+
+            <div class="container project-details-grid">
+
+
+                <div>
+
+                    <p class="section-label">
+                        O DESAFIO
+                    </p>
+
+
+                    <h2>
+                        Transformar partidas em informação.
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text">
+
+                    <p>
+
+                        O histórico de partidas contém uma quantidade
+                        significativa de informações sobre jogadores,
+                        resultados, modalidades, rating e características
+                        de cada partida.
+
+                    </p>
+
+
+                    <p>
+
+                        O desafio foi consumir esses dados através da API,
+                        estruturá-los, realizar as transformações
+                        necessárias e construir indicadores capazes de
+                        apresentar minha evolução de forma clara e
+                        interativa.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             IMPLEMENTAÇÃO TÉCNICA
+             ======================================== -->
+
+        <section class="section section-dark">
+
+            <div class="container project-details-grid">
+
+
+                <div>
+
+                    <p class="section-label">
+                        IMPLEMENTAÇÃO
+                    </p>
+
+
+                    <h2>
+                        Como o projeto foi construído.
+                    </h2>
+
+                </div>
+
+
+                <div class="project-text">
+
+                    <p>
+
+                        Além da análise visual, o projeto envolveu etapas
+                        de integração, tratamento, modelagem, atualização
+                        e publicação dos dados.
+
+                    </p>
+
+
+                    <ul class="project-bullets">
+
+
+                        <li>
+
+                            <strong>
+                                Integração com a API do Chess.com:
+                            </strong>
+
+                            utilizei a API pública da plataforma para
+                            coletar meu histórico de partidas, informações
+                            dos adversários, resultados, modalidades
+                            e dados de rating.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Enriquecimento dos dados com a API do World Bank:
+                            </strong>
+
+                            utilizei a API pública de países do Banco Mundial
+                            para construir uma dimensão de países a partir
+                            dos códigos ISO dos adversários.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Dimensão de países:
+                            </strong>
+
+                            os dados retornados pela API do World Bank foram
+                            tratados para manter o código ISO de duas letras
+                            e o nome do país, permitindo relacionar os países
+                            aos jogadores encontrados no Chess.com.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Análise geográfica dos adversários:
+                            </strong>
+
+                            a dimensão de países permitiu identificar a origem
+                            dos principais adversários e incorporar essa
+                            informação às análises do dashboard.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Tratamento de dados no Power Query:
+                            </strong>
+
+                            todo o processo de limpeza, transformação,
+                            padronização e preparação dos dados foi realizado
+                            utilizando Power Query e linguagem M.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Modelagem de dados:
+                            </strong>
+
+                            os dados foram estruturados e relacionados para
+                            permitir análises por período, modalidade, rating,
+                            adversário, país e resultado das partidas.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Medidas em DAX:
+                            </strong>
+
+                            foram criadas medidas para quantidade de partidas,
+                            vitórias, derrotas, empates, aproveitamento,
+                            evolução de rating e demais indicadores utilizados
+                            nas análises.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Dataflow no Power BI Service:
+                            </strong>
+
+                            criei um Dataflow para centralizar parte do processo
+                            de obtenção e transformação dos dados, com rotina
+                            automática de atualização diária.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Atualização automática:
+                            </strong>
+
+                            o modelo semântico e o relatório publicado no
+                            Power BI Service possuem rotina de atualização
+                            diária para incorporar novas partidas.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Publicação no Power BI Service:
+                            </strong>
+
+                            o dashboard foi publicado online para possibilitar
+                            navegação e interação através da web.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                Integração com meu portfólio:
+                            </strong>
+
+                            o dashboard foi incorporado diretamente ao meu
+                            site através do recurso de embed do Power BI.
+
+                        </li>
+
+
+
+                        <li>
+
+                            <strong>
+                                HTML, CSS e GitHub Pages:
+                            </strong>
+
+                            meu portfólio foi desenvolvido utilizando HTML
+                            e CSS e publicado através do GitHub Pages,
+                            com apoio de Inteligência Artificial durante
+                            o desenvolvimento e refinamento da interface.
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             PRINCIPAIS ANÁLISES
+             ======================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <p class="section-label">
+                    ANÁLISES
+                </p>
+
+
+                <h2>
+                    O que o dashboard permite analisar.
+                </h2>
+
+
+                <div class="metrics-grid">
+
+
+                    <article class="metric-card">
+
+                        <span>
+                            01
+                        </span>
+
+
+                        <h3>
+                            Evolução do Rating
+                        </h3>
+
+
+                        <p>
+
+                            Acompanhamento da evolução do rating
+                            registrado ao longo dos meses e anos.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="metric-card">
+
+                        <span>
+                            02
+                        </span>
+
+
+                        <h3>
+                            Aproveitamento
+                        </h3>
+
+
+                        <p>
+
+                            Análise das taxas de vitórias,
+                            derrotas, empates e aproveitamento
+                            geral das partidas.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="metric-card">
+
+                        <span>
+                            03
+                        </span>
+
+
+                        <h3>
+                            Modalidades
+                        </h3>
+
+
+                        <p>
+
+                            Comparação de desempenho em modalidades
+                            como Rapid, Blitz, Bullet e Daily.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="metric-card">
+
+                        <span>
+                            04
+                        </span>
+
+
+                        <h3>
+                            Adversários
+                        </h3>
+
+
+                        <p>
+
+                            Análise do desempenho por faixa de rating,
+                            país e perfil dos jogadores enfrentados.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             TECNOLOGIAS
+             ======================================== -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <p class="section-label">
+                    TECNOLOGIAS
+                </p>
+
+
+                <h2>
+                    Stack utilizada.
+                </h2>
+
+
+                <div class="technologies">
+
+                    <span>Power BI</span>
+
+                    <span>DAX</span>
+
+                    <span>Power Query</span>
+
+                    <span>Linguagem M</span>
+
+                    <span>API REST</span>
+
+                    <span>JSON</span>
+
+                    <span>Chess.com API</span>
+
+                    <span>World Bank API</span>
+
+                    <span>Power BI Dataflow</span>
+
+                    <span>Power BI Service</span>
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>GitHub Pages</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             NAVEGAÇÃO
+             ======================================== -->
+
+        <section class="project-navigation">
+
+            <div class="container">
+
+                <p>
+                    PORTFÓLIO
+                </p>
+
+
+                <a href="../index.html#portfolio">
+                    Ver outros projetos →
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <p>
+                © 2026 Caio Matos
+            </p>
+
+
+            <a href="../index.html">
+                Voltar para o início ↑
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../script.js"></script>
+
+
+</body>
+
+</html>
